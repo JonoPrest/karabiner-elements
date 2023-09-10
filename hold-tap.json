@@ -1,0 +1,33 @@
+{
+  "title": "shift_escape_on_tap",
+  "rules": [
+    {
+      "description": "left_shift button becomes escape if tapped and shift if held or used in combo with something else",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift"
+          },
+          "to": [
+            {
+              "key_code": "left_shift",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "left_shift",
+              "halt": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
