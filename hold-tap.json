@@ -1,5 +1,5 @@
 {
-  "title": "shift_escape_on_tap",
+  "title": "tap_and_hold",
   "rules": [
     {
       "description": "left_shift button becomes escape if tapped and shift if held or used in combo with something else",
@@ -23,6 +23,34 @@
           "to_if_held_down": [
             {
               "key_code": "left_shift",
+              "halt": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command button becomes return_or_enter if tapped and shift if held or used in combo with something else",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_command",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "left_command",
               "halt": true
             }
           ]
