@@ -1,10 +1,17 @@
 import { FromAndToKeyCode, map, rule } from "karabiner.ts";
 
+const threshold = 150;
+
 const mapHeldDown = (fromKey: FromAndToKeyCode, toKey: FromAndToKeyCode) =>
   map(fromKey)
+    // .toAfterKeyUp(fromKey)
+    .toDelayedAction([], { key_code: fromKey })
+    .toIfAlone(fromKey, undefined, { halt: true })
     .toIfHeldDown(toKey)
-    .toIfAlone(fromKey)
-    .parameters({ "basic.to_if_held_down_threshold_milliseconds": 200 });
+    .parameters({
+      "basic.to_if_held_down_threshold_milliseconds": threshold,
+      "basic.to_delayed_action_delay_milliseconds": threshold,
+    });
 
 const mapMultiHeldDown = (
   fromKeys: FromAndToKeyCode[],
