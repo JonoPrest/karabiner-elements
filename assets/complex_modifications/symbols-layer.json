@@ -1,8 +1,8 @@
 {
-  "title": "Test",
+  "title": "Symbols-layer-test",
   "rules": [
     {
-      "description": "Test",
+      "description": "Symbols-layre test",
       "manipulators": [
         {
           "type": "basic",

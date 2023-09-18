@@ -93,12 +93,6 @@
           "from": {
             "key_code": "j"
           },
-          "to": [
-            {
-              "key_code": "left_command",
-              "lazy": true
-            }
-          ],
           "to_if_alone": [
             {
               "key_code": "j"
