@@ -1,13 +1,5 @@
 import { FromModifierParam, layer, map } from "karabiner.ts";
-
-const allModifiers: FromModifierParam = [
-  "shift",
-  "option",
-  "command",
-  "control",
-];
-
-const mandatoryAndOptionalMods = [undefined, allModifiers];
+import { mandatoryAndOptionalMods } from "../utils/utils";
 
 export default layer("`", "vim-arrows", 200)
   .description(
