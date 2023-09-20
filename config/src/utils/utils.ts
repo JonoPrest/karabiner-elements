@@ -1,10 +1,14 @@
 import { FromModifierParam } from "karabiner.ts";
 
-export const allModifiers: FromModifierParam = [
-  "shift",
+export const modifiersNoShift: FromModifierParam = [
   "option",
   "command",
   "control",
 ];
 
-export const mandatoryAndOptionalMods = [undefined, allModifiers];
+export const allModifiers: FromModifierParam = [...modifiersNoShift, "shift"];
+
+export const mandatoryAndOptionalModsAll = [undefined, allModifiers];
+export const mandatoryAndOptionalModsNoShift = [undefined, modifiersNoShift];
+
+export const heldDownMillis = 150;
