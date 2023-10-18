@@ -1,8 +1,9 @@
-import { map, rule } from "karabiner.ts";
-import { mandatoryAndOptionalModsAll } from "../utils/utils";
+import { FromModifiers, map, rule } from "karabiner.ts";
 
+const modifiers: FromModifiers = { optional: ["any"] };
 export default [
   rule("swap backspace and caps_lock").manipulators([
-    map("caps_lock", ...mandatoryAndOptionalModsAll).to("delete_or_backspace"),
+    map({ key_code: "caps_lock", modifiers }).to("delete_or_backspace"),
+    map({ key_code: "delete_or_backspace", modifiers }).to("caps_lock"),
   ]),
 ];
