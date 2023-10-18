@@ -2,7 +2,7 @@ import { FromModifiers, layer, map } from "karabiner.ts";
 
 const modifiers: FromModifiers = { optional: ["any"] };
 
-export default layer("z", "brackets", 200)
+export default layer("z", "brackets and common symbols", 200)
   .description(
     "Convert right hand homerow into arrows much like vim motions with the ` layer"
   )
@@ -13,4 +13,8 @@ export default layer("z", "brackets", 200)
     map({ key_code: "k", modifiers }).to("0", "left_shift"), // ")"
     map({ key_code: "m", modifiers }).to("["), // "["
     map({ key_code: "comma", modifiers }).to("]"), // "]"
+    map({ key_code: "l", modifiers }).to("-"), // "-"
+    map({ key_code: "o", modifiers }).to("-", "left_shift"), // "_"
+    map({ key_code: "semicolon", modifiers }).to("="), // "="
+    map({ key_code: "p", modifiers }).to("=", "left_shift"), // "+"
   ]);
