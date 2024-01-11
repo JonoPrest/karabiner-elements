@@ -2,9 +2,7 @@ import { withModifier } from "karabiner.ts";
 import { layer, map } from "karabiner.ts";
 
 export default layer("z", "brackets and common symbols")
-  .description(
-    "Convert right hand homerow into arrows much like vim motions with the ` layer"
-  )
+  .description("Add brackets layer under 'z'")
   .manipulators([
     withModifier("optionalAny")([
       map({ key_code: "u" }).to("[", "left_shift"), // "{"
