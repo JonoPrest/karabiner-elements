@@ -1,11 +1,4 @@
-import {
-  FromAndToKeyCode,
-  FromModifierParam,
-  Modifier,
-  ModifierKeyCode,
-  map,
-  rule,
-} from "karabiner.ts";
+import { FromAndToKeyCode, ModifierKeyCode, map, rule } from "karabiner.ts";
 import { heldDownMillis } from "../utils/utils";
 import { qwertyToColemakLookep } from "./colemak";
 const mapHeldDown = (fromKey: FromAndToKeyCode, toKey: ModifierKeyCode) =>
@@ -26,6 +19,19 @@ type SymmetricalHomerowKeys = [FromAndToKeyCode, FromAndToKeyCode];
 type HomerowModMapping = [SymmetricalHomerowKeys, ModifierKeyCode];
 
 //Chat gpt code for when i want to create simmultaneos mappings
+let mappings: HomerowModMapping[] = [
+  [["j", "f"], "left_command"],
+  [["k", "d"], "left_option"],
+  [["l", "s"], "left_control"],
+];
+const mapMultiHeldDown = ([fromKeys, toKey]: HomerowModMapping) => {
+  return fromKeys.map((fromKey) => mapHeldDown(fromKey, toKey));
+};
+
+export default rule("home row mods").manipulators(
+  mappings.flatMap((mapping) => mapMultiHeldDown(mapping)),
+);
+
 // type CombinationMapping = [FromAndToKeyCode[], ModifierKeyCode[]];
 // const generateCombinations = (
 //   mappings: HomerowModMapping[],
@@ -54,16 +60,3 @@ type HomerowModMapping = [SymmetricalHomerowKeys, ModifierKeyCode];
 // };
 //
 // const allCombinations = generateCombinations(mappings);
-
-let mappings: HomerowModMapping[] = [
-  [["j", "f"], "left_command"],
-  [["k", "d"], "left_option"],
-  [["l", "s"], "left_control"],
-];
-const mapMultiHeldDown = ([fromKeys, toKey]: HomerowModMapping) => {
-  return fromKeys.map((fromKey) => mapHeldDown(fromKey, toKey));
-};
-
-export default rule("home row mods").manipulators(
-  mappings.flatMap((mapping) => mapMultiHeldDown(mapping)),
-);
