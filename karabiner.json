@@ -852,6 +852,22 @@
       "complex_modifications": {
         "rules": [
           {
+            "description": "Disable cmd-h shortcut",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "mandatory": [
+                      "command"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
             "description": "Layer - symbol-mode",
             "manipulators": [
               {
@@ -879,6 +895,17 @@
                   {
                     "key_code": "slash"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -896,6 +923,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -914,6 +950,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -932,6 +977,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -950,6 +1004,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -968,6 +1031,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -986,6 +1058,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1004,6 +1085,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1022,6 +1112,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1040,6 +1139,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1058,6 +1166,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1076,6 +1193,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1094,6 +1220,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1112,6 +1247,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1130,6 +1274,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1148,6 +1301,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1166,6 +1328,15 @@
                     "type": "variable_if",
                     "name": "symbol-mode",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               }
@@ -1199,6 +1370,17 @@
                   {
                     "key_code": "grave_accent_and_tilde"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -1221,6 +1403,15 @@
                     "type": "variable_if",
                     "name": "vim-arrows",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1244,6 +1435,15 @@
                     "type": "variable_if",
                     "name": "vim-arrows",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1267,6 +1467,15 @@
                     "type": "variable_if",
                     "name": "vim-arrows",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1290,6 +1499,15 @@
                     "type": "variable_if",
                     "name": "vim-arrows",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               }
@@ -1323,6 +1541,17 @@
                   {
                     "key_code": "z"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -1348,6 +1577,15 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1374,6 +1612,15 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1400,6 +1647,15 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1426,6 +1682,15 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1449,6 +1714,15 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1472,6 +1746,15 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1495,6 +1778,15 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1521,6 +1813,15 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1544,6 +1845,15 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1570,24 +1880,17 @@
                     "type": "variable_if",
                     "name": "brackets and common symbols",
                     "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "Disable cmd-h shortcut",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "h",
-                  "modifiers": {
-                    "mandatory": [
-                      "command"
+                  },
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
                     ]
                   }
-                }
+                ]
               }
             ]
           },
@@ -1627,7 +1930,18 @@
                 "parameters": {
                   "basic.to_if_held_down_threshold_milliseconds": 150,
                   "basic.to_delayed_action_delay_milliseconds": 150
-                }
+                },
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "basic",
@@ -1662,7 +1976,18 @@
                 "parameters": {
                   "basic.to_if_held_down_threshold_milliseconds": 150,
                   "basic.to_delayed_action_delay_milliseconds": 150
-                }
+                },
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "basic",
@@ -1697,7 +2022,18 @@
                 "parameters": {
                   "basic.to_if_held_down_threshold_milliseconds": 150,
                   "basic.to_delayed_action_delay_milliseconds": 150
-                }
+                },
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "basic",
@@ -1732,7 +2068,18 @@
                 "parameters": {
                   "basic.to_if_held_down_threshold_milliseconds": 150,
                   "basic.to_delayed_action_delay_milliseconds": 150
-                }
+                },
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "basic",
@@ -1767,7 +2114,18 @@
                 "parameters": {
                   "basic.to_if_held_down_threshold_milliseconds": 150,
                   "basic.to_delayed_action_delay_milliseconds": 150
-                }
+                },
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "basic",
@@ -1802,7 +2160,18 @@
                 "parameters": {
                   "basic.to_if_held_down_threshold_milliseconds": 150,
                   "basic.to_delayed_action_delay_milliseconds": 150
-                }
+                },
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1823,6 +2192,17 @@
                   {
                     "key_code": "q"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -1838,6 +2218,17 @@
                 "to": [
                   {
                     "key_code": "w"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1855,6 +2246,17 @@
                   {
                     "key_code": "f"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -1870,6 +2272,17 @@
                 "to": [
                   {
                     "key_code": "p"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1887,6 +2300,17 @@
                   {
                     "key_code": "g"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -1902,6 +2326,17 @@
                 "to": [
                   {
                     "key_code": "j"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1919,6 +2354,17 @@
                   {
                     "key_code": "l"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -1934,6 +2380,17 @@
                 "to": [
                   {
                     "key_code": "u"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1951,6 +2408,17 @@
                   {
                     "key_code": "y"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -1966,6 +2434,17 @@
                 "to": [
                   {
                     "key_code": "semicolon"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -1983,6 +2462,17 @@
                   {
                     "key_code": "a"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -1998,6 +2488,17 @@
                 "to": [
                   {
                     "key_code": "r"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -2015,6 +2516,17 @@
                   {
                     "key_code": "s"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -2030,6 +2542,17 @@
                 "to": [
                   {
                     "key_code": "t"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -2047,6 +2570,17 @@
                   {
                     "key_code": "d"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -2062,6 +2596,17 @@
                 "to": [
                   {
                     "key_code": "h"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -2079,6 +2624,17 @@
                   {
                     "key_code": "n"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -2094,6 +2650,17 @@
                 "to": [
                   {
                     "key_code": "e"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -2111,6 +2678,17 @@
                   {
                     "key_code": "i"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -2126,6 +2704,17 @@
                 "to": [
                   {
                     "key_code": "o"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -2143,6 +2732,17 @@
                   {
                     "key_code": "z"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -2158,6 +2758,17 @@
                 "to": [
                   {
                     "key_code": "x"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -2175,6 +2786,17 @@
                   {
                     "key_code": "c"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -2190,6 +2812,17 @@
                 "to": [
                   {
                     "key_code": "v"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               },
@@ -2207,6 +2840,17 @@
                   {
                     "key_code": "b"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -2223,6 +2867,17 @@
                   {
                     "key_code": "k"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -2238,6 +2893,17 @@
                 "to": [
                   {
                     "key_code": "m"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               }
@@ -2260,6 +2926,17 @@
                   {
                     "key_code": "delete_or_backspace"
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -2275,6 +2952,17 @@
                 "to": [
                   {
                     "key_code": "caps_lock"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               }
@@ -2304,6 +2992,17 @@
                     "hold_down_milliseconds": 150,
                     "halt": true,
                     "key_code": "left_shift"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_unless",
+                    "identifiers": [
+                      {
+                        "product_id": 18,
+                        "vendor_id": 13807
+                      }
+                    ]
                   }
                 ]
               }
@@ -2462,7 +3161,7 @@
             "product_id": 18,
             "vendor_id": 13807
           },
-          "ignore": true,
+          "ignore": false,
           "manipulate_caps_lock_led": false,
           "mouse_flip_horizontal_wheel": false,
           "mouse_flip_vertical_wheel": false,
