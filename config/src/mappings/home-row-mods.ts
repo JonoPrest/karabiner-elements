@@ -7,14 +7,15 @@ import {
   rule,
 } from "karabiner.ts";
 import { heldDownMillis } from "../utils/utils";
+import { qwertyToColemakLookep } from "./colemak";
 const mapHeldDown = (fromKey: FromAndToKeyCode, toKey: ModifierKeyCode) =>
   map(fromKey, undefined, "any")
     // .toAfterKeyUp(fromKey
     //
     .toDelayedAction([], {
-      key_code: fromKey,
+      key_code: qwertyToColemakLookep[fromKey],
     })
-    .toIfAlone(fromKey, undefined, { halt: true })
+    .toIfAlone(qwertyToColemakLookep[fromKey], undefined, { halt: true })
     .toIfHeldDown(toKey, undefined, { halt: true })
     .parameters({
       "basic.to_if_held_down_threshold_milliseconds": heldDownMillis,
@@ -64,5 +65,5 @@ const mapMultiHeldDown = ([fromKeys, toKey]: HomerowModMapping) => {
 };
 
 export default rule("home row mods").manipulators(
-  mappings.flatMap((mapping) => mapMultiHeldDown(mapping))
+  mappings.flatMap((mapping) => mapMultiHeldDown(mapping)),
 );

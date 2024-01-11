@@ -1,16 +1,6 @@
-import { FromModifiers, map, rule } from "karabiner.ts";
+import { FromKeyCode, FromModifiers, map, rule } from "karabiner.ts";
 
-const swapLetters = [
-  ["e", "f"],
-  ["r", "p"],
-  ["t", "g"],
-  ["y", "j"],
-  ["u", "l"],
-  ["i", "u"],
-  ["i", "u"],
-];
-
-const qwerty = [
+const qwerty: FromKeyCode[] = [
   "q",
   "w",
   "e",
@@ -30,7 +20,7 @@ const qwerty = [
   "j",
   "k",
   "l",
-  ";",
+  "semicolon",
   "z",
   "x",
   "c",
@@ -73,11 +63,10 @@ const colemak = [
 const zip = (a: any[], b: any[]) => a.map((k, i) => [k, b[i]]);
 
 const pairs = zip(qwerty, colemak);
+export const qwertyToColemakLookep = Object.fromEntries(pairs);
 
 const modifiers: FromModifiers = { optional: ["any"] };
 
-export default [
-  rule("Swap keyboard to colemak layout").manipulators(
-    pairs.map(([q, c]) => map({ key_code: q, modifiers }).to(c)),
-  ),
-];
+export default rule("Swap qwerty to colemak layout").manipulators(
+  pairs.map(([q, c]) => map({ key_code: q, modifiers }).to(c)),
+);
