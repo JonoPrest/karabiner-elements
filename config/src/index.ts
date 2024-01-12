@@ -5,7 +5,7 @@ import simpleMappings from "./mappings/simple-mappings";
 import dualFunctionMappings from "./mappings/dual-function-mappings";
 import homeRowMods from "./mappings/home-row-mods";
 import brackets from "./layers/brackets";
-import disableCmdH from "./mappings/disable-cmd-h";
+import disableCmdShortcut from "./mappings/disable-cmd-shortcut";
 import colemak from "./mappings/colemak";
 // ! Change '--dry-run' to your Karabiner-Elements Profile name.
 // (--dry-run print the config json into console)
@@ -26,7 +26,7 @@ const NON_DYGMA_DEFY_RULES = [
   ...dualFunctionMappings,
 ];
 
-const ALL_RULES = [disableCmdH];
+const ALL_RULES = [disableCmdShortcut];
 writeToProfile(
   "Jono",
 

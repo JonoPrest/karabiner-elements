@@ -864,6 +864,17 @@
                     ]
                   }
                 }
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "o",
+                  "modifiers": {
+                    "mandatory": [
+                      "command"
+                    ]
+                  }
+                }
               }
             ]
           },
